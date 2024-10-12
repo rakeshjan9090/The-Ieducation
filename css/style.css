@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img{
+	width: 59px;
+	border: 2px solid white;
+	border-radius: 150px;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	cursor: pointer;
+}
+.nav-list{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	/*flex-direction: column;*/
+}
+
+.nav-list li{
+	list-style: none;
+	padding: 26px 30px;
+	font-size: 20px;
+	font-family: 'Ubuntu',sans-serif;
+}
+
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+.nav-list li a:hover{
+	color: gray;
+}
+
+.rightNav{
+	/*background-color: blueviolet;*/
+	width: 50%;
+	text-align: right;
+	padding: 0 23px;
+}
+
+/* --------------------moblie icons--------------- */
+.burger{
+	display: none;
+}
+
+#search{
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid gray;
+	border-radius: 9px;
+}
+.background{
+	background: rgba(0, 0, 0, 0.7) url(../img/backg.jpg);
+	background-size: cover;
+	background-blend-mode: darken;
+}
+.firstsection{
+	height: 100vh;
+}
+.box-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	max-width: 50%;
+	margin: auto;
+	height: 80%;
+}
+
+.firsthalf{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.secondhalf img{
+	width: 250px;
+	border: 4px solid white;
+	border-radius: 150px;
+	display: block;
+    margin: auto;
+}
+.text-big{
+	font-size: 41px;
+}
+.text-small{
+	font-size: 18px;
+}
+.btn{
+	padding: 8px 20px;
+	margin: 7px 3px;
+	border: 2px solid rgb(43, 187, 212);
+	border-radius: 8px;
+	font-size: 16px;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+.btn-sm{
+	padding: 6px 10px;
+	vertical-align: middle;
+
+}
+.section{
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 90%;
+	margin: auto;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+.section-left{
+	flex-direction: row-reverse;
+
+}
+.sectionsubtag{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.paras{
+	padding: 0px 65px;
+}
+
+.contact{
+	background-color: #f3cc99;
+	height: 52vh;
+}
+.text-center{
+	text-align: center;
+	height: 80px;
+}
+
+.form{
+	max-width: 561px;
+	margin: auto;
+}
+
+.form input{
+	margin: 10px 0;
+	padding: 5px 3px;
+	width: 100%;
+	font-size: 19px;
+	border: 2px solid gray;
+	border-radius: 6px;
+}
+.card{
+	padding: 10px;
+}
+.card-img-top{
+	border: 2px solid;
+    border-radius: 5px;
+
+}
+.btn-form{
+	cursor: pointer;
+}
+img, svg {
+    vertical-align: middle;
+    border: 2px solid #3d8b00;
+    border-radius: 56px;
+}
+.burger{
+	position: absolute;
+	cursor: pointer;
+	right: 5%;
+	top: 15px;
+}
+.line{
+	width: 33px;
+	background-color: white;
+	height: 4px;
+	margin: 5px 5px;	
+}
+
+.containor{
+	padding-left: auto;
+	padding-right: auto;
+	align-items: center;
+	background-color: #1a7dda;
+	color: white;
+	text-align: center;
+}
+
+.footer{
+    border-bottom: 1px solid #141519;
+    box-shadow: inset 0 1px 0 hsl(214deg 3% 59% / 15%);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 16px;
+	flex-direction: column;
+	font-size: 14px;
+	background-color: #141519;
+	color: white;
+}
+
+@media only screen and (max-width: 1145px){
+	.nav-list{
+		flex-direction: column;
+	}
+	.navbar{
+		flex-direction: column;
+	}
+	.rightNav{
+		text-align: center;
+	}
+	
+	#search{
+		width: 100%;
+	}
+	.h-nav-resp{
+		height: 22px;
+	}
+	.v-class-resp{
+		opacity: 0;
+	}
+	.footer-secondary {
+		flex-direction: column;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 777px){
+	.burger{
+		display: none;
+	}
+}
